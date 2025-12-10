@@ -1,19 +1,14 @@
-Here is the text for a detailed `README.md` file, structured to meet standard data science project requirements and incorporating all the specific details from your report.
-
-***
-
 # Merchandise Trade and Employment Dynamics in India: An Analysis of E-Way Bill Data
 
 **Author:** Srimant Mishra  
-**Submission Date:** December 9, 2025
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes the transformation of the Indian economy from a cash-based informal system to a formalized digital economy following the implementation of the **Goods and Services Tax (GST)** in 2016. Specifically, this study utilizes **E-Way Bill** data (electronic documentation for the movement of goods) to map the patterns of merchandise trade across Indian states from 2018 to present.
 
 Crucially, this project integrates trade data with **employment statistics** to investigate correlations between economic formalization and labor market dynamics, with a specific focus on gender disparities and the distinction between casual and formal employment.
 
-## 🎯 Motivation
+## Motivation
 
 India has historically functioned as a cash-heavy, informal economy due to high tax rates and compliance burdens. The 2016 GST implementation introduced incentives (input tax credits) and structural pressures that accelerated formalization. A key component of this shift was the **E-Way Bill**, a unique 12-digit digital record required for moving goods valued over ₹50,000.
 
@@ -22,13 +17,13 @@ This project was motivated by:
 2.  **Economic Geography:** To verify if economic activity is concentrating in specific regions (North vs. South / East vs. West).
 3.  **Socio-Economic Linkages:** To understand if the rise in merchandise trade translates to better quality (formal) jobs for men and women.
 
-## 📂 Data Description
+## Data Description
 
 The analysis relies on two primary datasets released under the **Government Open Data License (GODL)**.
 
 ### 1. E-Way Bill Data
 * **Scope:** Merchandise trade movement above ₹50,000 threshold.
-* **Timeframe:** 2018 – Present.
+* **Timeframe:** 2018 – 2025.
 * **Granularity:** Segregated by Year, Month, and State.
 * **Metrics:**
     * **Volume:** Number of bills generated.
@@ -43,9 +38,9 @@ The analysis relies on two primary datasets released under the **Government Open
     * **Casual Labour:** Irregular work, no benefits.
     * **Regular Wage/Salary:** Formal employment.
 
-*Data Source:* [https://www.data.gov.in/Godl](https://www.data.gov.in/Godl)
+*Data Source:* https://ndap.niti.gov.in/
 
-## ❓ Research Questions
+## Research Questions
 
 1.  **Geographical Divides:** Is there a North-South or East-West divide in merchandise trade intensity?
 2.  **Growth Trajectory:** What is the Compound Annual Growth Rate (CAGR) of trade across different states? Are specific regions lagging?
@@ -55,7 +50,7 @@ The analysis relies on two primary datasets released under the **Government Open
     * Does rising trade increase formal employment?
     * **Gender Dynamics:** How does the impact differ for men versus women?
 
-## 🛠 Methodology
+## Methodology
 
 * **Data Extraction & Cleaning:** Built a dictionary-based data structure to store state-level metrics (Count, Value, Trade Type) for easy retrieval.
 * **Metric Calculation:**
@@ -64,7 +59,7 @@ The analysis relies on two primary datasets released under the **Government Open
 * **Geospatial Analysis:** Utilized **Geopandas** and an external **GeoJSON** file of Indian districts/states to superimpose trade data onto maps, allowing for the visualization of regional clusters.
 * **Dashboarding:** Created a state-level dashboard to contextualize local metrics against national averages.
 
-## 📊 Key Findings
+## Key Findings
 
 ### 1. Sustained Economic Growth
 Despite the Covid-19 shock, merchandise trade has shown high momentum.
@@ -92,13 +87,13 @@ Despite the Covid-19 shock, merchandise trade has shown high momentum.
     * *Observation:* This counter-intuitive trend holds across both industrialized and non-industrialized states.
     * *Geography:* A clear divide exists. States "below the line" (Southern/Western) show positive correlations, while the populous Northern/Eastern states show negative correlations for formal job creation.
 
-## 🚀 Implications
+## Implications
 
 * **For Policymakers:** The analysis identifies a geographical line separating states creating formal jobs from those that are not. This offers a roadmap for targeted interventions in labor formalization and infrastructure to prevent bottlenecks.
 * **For Businesses:** Provides a rubric for logistics planning—identifying which states have mature formal economies versus those reliant on volatile, casual labor markets.
 * **For Journalists:** Highlights the disconnect between economic growth and female formal employment, as well as the migration patterns from "jobless growth" regions.
 
-## ⚠️ Limitations
+## Limitations
 
 * **Threshold Bias:** E-Way bills only capture trade >₹50,000, potentially excluding the micro-economy.
 * **Correlation vs. Causation:** While strong correlations exist between trade and employment, external factors (migration policies, local laws) play a role.
@@ -106,4 +101,4 @@ Despite the Covid-19 shock, merchandise trade has shown high momentum.
 
 ## 📄 License
 
-This project utilizes data under the **Government Open Data License (GODL)**. The code and analysis within this repository are open for adaptation and use.
+This project utilizes data under the **Government Open Data License (GODL)**. The code and analysis within this repository are open for adaptation and use under the MIT License
