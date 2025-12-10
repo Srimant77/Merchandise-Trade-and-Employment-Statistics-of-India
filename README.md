@@ -99,6 +99,6 @@ Despite the Covid-19 shock, merchandise trade has shown high momentum.
 * **Correlation vs. Causation:** While strong correlations exist between trade and employment, external factors (migration policies, local laws) play a role.
 * **Data Lag:** Employment data reporting cycles may not perfectly align with real-time E-Way bill generation.
 
-## 📄 License
+## License
 
 This project utilizes data under the **Government Open Data License (GODL)**. The code and analysis within this repository are open for adaptation and use under the MIT License
