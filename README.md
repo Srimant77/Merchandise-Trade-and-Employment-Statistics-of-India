@@ -59,6 +59,8 @@ The analysis relies on two primary datasets released under the **Government Open
 * **Geospatial Analysis:** Utilized **Geopandas** and an external **GeoJSON** file of Indian districts/states to superimpose trade data onto maps, allowing for the visualization of regional clusters.
 * **Dashboarding:** Created a state-level dashboard to contextualize local metrics against national averages.
 
+## Detailed Project Report - https://docs.google.com/document/d/1VNc_Mj78468eHLSyVE98K8X6k9PNcU2bcCfY-26NOuw/edit?tab=t.0
+
 ## Key Findings
 
 ### 1. Sustained Economic Growth
